@@ -11,20 +11,22 @@
 <body>
     <!-- Header -->
     <header id="header">
-        <div class="header-wrapper">
-            <div class="header-bar">
-                <img class="logo" href="./assets/images/Logo.png">
-                <nav class="navbar">
-                    <ul class="navbar-items">
-                        <li class="navbar-item">Productos</li>
-                        <li class="navbar-item">Servicios</li>
-                        <li class="navbar-item">Soluciones</li>
-                        <li class="navbar-item">Empresa</li>
-                    </ul>
-                </nav>
-                <div class="header-search">
-                    <img src="" alt="" class="icon-search">
-                    <span class="region">MX</span>
+        <div class="header-bar">
+            <div class="header-img">
+                <img class="logo" src="./assets/images/logo.png">
+            </div>
+            <nav class="navbar">
+                <ul class="navbar-items">
+                    <li class="navbar-item">Productos</li>
+                    <li class="navbar-item">Servicios</li>
+                    <li class="navbar-item">Soluciones</li>
+                    <li class="navbar-item">Empresa</li>
+                </ul>
+            </nav>
+            <div class="header-search">
+                <div class="header-search-items">
+                    <i class="fa fa-search"></i>
+                    <i class="fa fa-globe"> MX </i>
                 </div>
             </div>
         </div>
@@ -32,35 +34,53 @@
     <!-- Main Area-->
     <main id="main">
         <section class="jumbotron">
-            <div class="content-wrapper">
-                <h2>Soluciones de Automatización al Alcance de Cualquier Problema.</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eos ullam 
-                    reprehenderit accusamus ab facere tempore mollitia deleniti at aperiam esse, 
-                    nobis autem, officia vitae et? Sed hic minus repudiandae quod itaque dolorum totam 
-                    numquam aspernatur! Quam, iste dignissimos incidunt doloribus ea fuga. Quae voluptate a
-                    ccusantium sed tempore quisquam? Optio.</p>
+            <div class="jumbotron-wrapper">
+                <div class="content-wrapper">
+                    <h2>Soluciones de Automatización al Alcance de Cualquier Problema.</h2>
+                    <p>Dando servicios de automatización buscando siempre la satisfacción del cliente, así como, reducir los costos de producción,
+                        mejorar la calidad del producto y aumentar sus resultados.
+                    </p>
+                    <p><strong>Contacta con uno de nuestro profesionales</strong></p>
+                </div>
+                <div class="jumbotron-form">
+                    <div class="form">
+                        <input type="text" name="name" autocomplete="off" required>
+                        <label for="" class="label-name">
+                            <span class="content-name">Ingresa tu correo</span>
+                        </label>
+                        <i class='fas fa-arrow-right'></i> 
+                    </div>
+                </div>
             </div>
         </section>
-        <section class="boxes">
-            <div class="box">
-                <img src="" alt="" class="box-image">
-                <h4 class="box-header">Sistemas de Robots</h4>
-                <div class="box-text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quo minus ipsa? Animi beatae fugiat, culpa quo magni omnis maxime!</p>
+        <section class="cards-section">
+            <div class="cards-text">
+                <div class="content-wrap">
+                    <h4>Selecciona tu área de interes</h4>
+                    <p>Puedes seleccionar entre algunas de nuestras opciones para más información.</p>
                 </div>
             </div>
-            <div class="box">
-                <img src="" alt="" class="box-image">
-                <h4 class="box-header">Máquinas de Producción</h4>
-                <div class="box-text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quo minus ipsa? Animi beatae fugiat, culpa quo magni omnis maxime!</p>
+            <div class="cards">
+                <div class="card">
+                    <img src="./assets/images/Sistemas-Robots.jpg" alt="" class="card-image">
+                    <h4 class="card-header">Sistemas de Robots</h4>
+                    <div class="card-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quo minus ipsa? Animi beatae fugiat, culpa quo magni omnis maxime!</p>
+                    </div>
                 </div>
-            </div>
-            <div class="box">
-                <img src="" alt="" class="box-image">
-                <h4 class="box-header">Sistemas de Producción</h4>
-                <div class="box-text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quo minus ipsa? Animi beatae fugiat, culpa quo magni omnis maxime!</p>
+                <div class="card">
+                    <img src="./assets/images/Maquinas-Produccion.jpg" alt="" class="card-image">
+                    <h4 class="card-header">Máquinas de Producción</h4>
+                    <div class="card-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quo minus ipsa? Animi beatae fugiat, culpa quo magni omnis maxime!</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/images/Sistemas-Produccion.jpg" alt="" class="card-image">
+                    <h4 class="card-header">Sistemas de Producción</h4>
+                    <div class="card-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quo minus ipsa? Animi beatae fugiat, culpa quo magni omnis maxime!</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -69,7 +89,7 @@
     <section id="additional-info">
         <div class="additional-info-wrapper">
             <div class="additional-info-img">
-                <img src="" alt="">
+                <img src="./assets/images/automation.jpg" alt="">
             </div>
             <div class="additional-info-content">
                 <h4>Visita nuestro catalogo con todos nuestros productos y servicios.</h4>
@@ -82,17 +102,12 @@
         <div class="newsletter-wrapper">
             <p>Suscribirse al boletín de noticas de Artermis Automation</p>
             <div class="newsletter-input-wrapper">
-                <div class="newsletter-input">
-                    <span class="input-container clearfix">
-                        ::before
-                        <input class="input-field" name="mail" type="text">
-                        <label for="Su dirreción de correo electrónico" class="input-label"></label>
-                    </span>
-                    <div class="newsletter-button">
-                        <button type="submit">
-                            ::before
-                        </button>
-                    </div>
+                <div class="news-form">
+                    <input type="text" name="name" autocomplete="off" required>
+                    <label for="" class="news-label-name">
+                        <span class="news-content-name">Ingresa tu correo</span>
+                    </label>
+                    <i class='fas fa-arrow-right'></i> 
                 </div>
             </div>
         </div>
@@ -104,9 +119,10 @@
         </div>
         <div class="footer-info">
           <ul class="footer-info-items">
+            <li class="footer-info-item">Artemis Automation &copy; 2022</li>
             <li class="footer-info-item">Legal</li>
-            <li class="footer-info-item">Centro de Privacidade</li>
-            <li class="footer-info-item">Política de privacidade</li>
+            <li class="footer-info-item">Centro de Privacidad</li>
+            <li class="footer-info-item">Política de privacidad</li>
             <li class="footer-info-item">Cookies</li>
             <li class="footer-info-item">Sobre anúncios</li>
           </ul>
